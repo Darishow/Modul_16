@@ -1,0 +1,16 @@
+class Rectangle:
+    def __init__(self, a, b, width, heigth):
+        self.a = a
+        self.b = b
+        self.width = width
+        self.heigth = heigth
+
+    def __str__(self):
+        return f'Rectangle : {self.a}, {self.b}, {self.width}, {self.heigth}.'
+
+    def get_area(self):
+        return self.width * self.heigth
+
+rect_1 = Rectangle(20, 15, 50, 30)
+print(rect_1)
+print(rect_1.get_area())
